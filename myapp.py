@@ -27,6 +27,7 @@ df = pldata.gapminder(return_type='pandas')
 
 # Initialize Dash app
 app = Dash(__name__)
+server = app.server  #for task 5 : deploy to render.com
 
 countries = df['country'].drop_duplicates()
 
